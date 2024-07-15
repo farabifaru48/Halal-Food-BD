@@ -274,7 +274,7 @@ p {
 }
 
 .card-footer {
-    background-color: var(--bg-color); /* Background color for footer */
+    background-color: #00a149; /* Background color for footer */
     padding: 0.75rem 1.25rem; /* Padding for footer */
     border-top: 1px solid var(--secondary-color); /* Border on top of footer */
 }
