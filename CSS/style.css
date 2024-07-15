@@ -139,16 +139,82 @@ p {
 }
 
 /* Header Design */
-.navigation-wrap{
+.navigation-wrap {
     position: fixed;
     width: 100%;
     left: 0;
     z-index: 1000;
     -webkit-transition: all 0.3s ease-out;
-    transition:  all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
-.navigation-wrap .nav-item{
+.navigation-wrap .nav-item {
     padding: 0 0.625rem;
     transition: all 0.3s linear;
+}
+.navigation-wrap .nav-item:hover {
+    color: var(--bg-color) !important; 
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    color: var(--white-color);
+}
+
+.nav-link {
+    font-size: 0.9375rem; /* Corrected selector name */
+    font-weight: 600;
+    text-decoration: capitalize;
+    color: var(--white-color);
+    letter-spacing: 1px;
+}
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--bg-color) !important;
+}
+
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* Navbar styling Change if Scroll */
+.navigation-wrap.scroll-on{
+    position: fixed;
+    background-color: var(--white-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0.125rem 0 rgb(0, 0, 0, 0.09);
+
+}
+.navigation-wrap.scroll-on .nav-link{
+    color: var(--black-color);
+}
+
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active{
+
+    color: var(--bg-color);
+}
+
+/* TOP BANNER Design */
+.top-banner{
+    width: 100%;
+    background: url(../images/banner\ img.png) no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+    filter: brightness(75%); /* Adjust the brightness to make the image darker */
+
+
+}
+.top-banner p{
+    color: var(--white-color);
 }
