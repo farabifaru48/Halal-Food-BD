@@ -8,3 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) { // Adjust the scroll value as needed
+                document.querySelector('.navigation-wrap').classList.add('scrolled');
+            } else {
+                document.querySelector('.navigation-wrap').classList.remove('scrolled');
+            }
+        });
+    });
+

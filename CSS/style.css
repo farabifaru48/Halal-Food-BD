@@ -252,27 +252,36 @@ p {
 }
 
 /* Food Recipe Carousel */
-
-.carousel-item img {
-    opacity: 0.8; /* Adjust image opacity */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+/* Blog
+/* CSS for Blog Section */
+.card {
+    border: none; /* Remove default card border */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
-.carousel-item img:hover {
-    opacity: 1; /* Increase opacity on hover */
+.card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
 }
 
-.carousel-caption h2,
-.carousel-caption p {
-    transition: opacity 0.3s ease; /* Smooth transition for caption elements */
+.card-title {
+    font-size: 1.5rem; /* Larger font size for card titles */
+    font-weight: bold; /* Bold font for emphasis */
+    margin-bottom: 0.5rem; /* Adjust spacing below the title */
 }
 
-.carousel-caption:hover h2,
-.carousel-caption:hover p {
-    opacity: 0.8; /* Reduce opacity on hover */
+.card-text {
+    line-height: 1.6; /* Increase line height for better readability */
 }
 
+.card-footer {
+    background-color: var(--bg-color); /* Background color for footer */
+    padding: 0.75rem 1.25rem; /* Padding for footer */
+    border-top: 1px solid var(--secondary-color); /* Border on top of footer */
+}
 
+.text-muted {
+    color: var(--text-color); /* Color for muted text */
+}
 
 
 
@@ -290,6 +299,10 @@ p {
     .top-banner {
         padding: 8rem 0 4rem; 
         /* Adjust padding for smaller screens */
+    }
+    .navigation-wrap.scrolled {
+        background-color: var(--white-color) /* Change background color as needed */
+        transition: background-color 0.3s ease;
     }
     
     .text-content {
