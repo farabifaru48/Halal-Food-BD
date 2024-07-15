@@ -224,6 +224,67 @@ p {
     position: relative; /* Ensure text is above the overlay */
     z-index: 1;
 }
+/* Slideer */
+.carousel-item img {
+    border-radius: 10px; /* Rounded corners for images */
+    object-fit: cover; /* Ensure images cover entire card */
+    height: 300px; /* Set a fixed height for consistency */
+    margin-top: 20px; /* Add margin-top for spacing */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: var(--white-color); /* Set text color for prev and next icons */
+}
+
+
+/* food menu */
+
+.food-card {
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+    border: var(--secondary);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    
+}
+
+/* Food Recipe Carousel */
+
+.carousel-item img {
+    opacity: 0.8; /* Adjust image opacity */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.carousel-item img:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+    transition: opacity 0.3s ease; /* Smooth transition for caption elements */
+}
+
+.carousel-caption:hover h2,
+.carousel-caption:hover p {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Tablet */
 @media (max-width: 991px) {
     .top-banner {
