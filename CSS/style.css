@@ -164,10 +164,13 @@ p {
 
 .navbar-toggler {
     color: var(--white-color);
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
 
 .nav-link {
-    font-size: 0.9375rem; /* Corrected selector name */
+    font-size: 0.9375rem; 
     font-weight: 600;
     text-decoration: capitalize;
     color: var(--white-color);
@@ -206,15 +209,74 @@ p {
 }
 
 /* TOP BANNER Design */
-.top-banner{
+.top-banner {
+    position: relative;
     width: 100%;
+    height: 100vh; /* Full viewport height */
     background: url(../images/banner\ img.png) no-repeat center;
     background-size: cover;
     padding: 16.875rem 0 9.375rem;
-    filter: brightness(75%); /* Adjust the brightness to make the image darker */
-
-
 }
-.top-banner p{
+
+
+.top-banner p {
     color: var(--white-color);
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 1;
 }
+/* Tablet */
+@media (max-width: 991px) {
+    .top-banner {
+        padding: 8rem 0 4rem; 
+        /* Adjust padding for smaller screens */
+    }
+    
+    .text-content {
+        width: 100%;
+    }
+
+    /* Navbar Brand */
+    .navigation-wrap .navbar-brand img {
+        height: 3.8125rem;
+    }
+    .navigation-wrap {
+        
+        text-align: center;
+        background-color: var(--white-color);
+    }
+    
+    .navigation-wrap .nav-link {
+        line-height: 1.875rem;
+        color: var(--black-color);
+    }
+    .navbar-toggler {
+        color: var(--black-color);
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+    .top-banner{
+        padding: 9.37rem 0 9.375rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 767) {
+h1{
+    font-size: 2.8rem;
+
+}
+h2{
+    font-size: 1.3rem;
+    line-height: 28px;
+}
+.top-banner{
+    padding: 10.37rem 0 9.375rem;
+}
+
+}
+
+/* Responsive */
+@media (max-width: 767) {
+
+    }
