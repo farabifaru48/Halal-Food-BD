@@ -1,5 +1,5 @@
-/* Variables */
-:root {
+ /* Variables */
+ :root {
     --bg-color: #FFC222;
     --secondary-color: #00a149;
     --white-color: #fff;
@@ -121,13 +121,14 @@ p {
     box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
     transition: all 0.4s ease-out 0s;
 }
+
 .second-btn {
     display: inline-block;
     padding: 0.625rem 1.875rem;
     line-height: 1.5625rem;
     background-color: var(--secondary-color);
     color: var(--black-color);   
-     border: 0.1875rem solid var(--secondary-color);
+    border: 0.1875rem solid var(--secondary-color);
     font-size: 0.9375rem;
     text-transform: capitalize;
     border-radius: 0.5rem;
@@ -139,6 +140,7 @@ p {
     background-color: transparent;
     color: var(--bg-color);
 }
+
 .second-btn:hover {
     background-color: transparent;
     color: var(--white-color);
@@ -155,7 +157,12 @@ p {
     margin: auto;
 }
 
-/* Header Design */
+/* Header Design / Navbar*/
+.navbar-scroll {
+    transition: background-color 0.3s ease;
+    background-color: var(--bg-secondary-color); /* Replace with your secondary color */
+}
+
 .navigation-wrap {
     position: fixed;
     width: 100%;
@@ -200,11 +207,17 @@ p {
     color: var(--bg-color) !important;
 }
 
+.nav-link.active {
+    color: var(--bg-color); /* Adjust active link color */
+    font-weight: bold; /* Optional: Adjust active link font weight */
+}
+
 .navigation-wrap .main-btn {
     padding: 0.3125rem 1.4375rem;
     box-shadow: none;
     margin-left: 0.625rem;
 }
+
 /* Top Banner */
 .top-banner {
     position: relative;
@@ -249,7 +262,6 @@ p {
     .carousel-caption p {
         font-size: 1rem;
     }
-  
 }
 
 /* Food Menu */
@@ -295,6 +307,25 @@ p {
     color: var(--text-color);
 }
 
+/* social icon */
+ /* Adjust spacing between social icons */
+ .social-icons li {
+    margin-right: 15px; /* Adjust as needed */
+}
+
+/* Style for social icons */
+.social-icons a {
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .top-banner {
@@ -335,18 +366,18 @@ p {
         padding: 9.37rem 0 9.375rem;
     }
     .main-btn, .second-btn {
-        width: 100%; /* Make buttons full-width on medium devices */
-        margin-bottom: 10px; /* Add margin between buttons on medium devices */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 }
 @media (max-width: 320px) {
     .main-btn,
     .second-btn {
-        width: 100%; /* Make buttons full-width on small devices */
-        padding: 0.625rem 1.875rem; /* Adjust padding */
-        font-size: 0.8125rem; /* Adjust font size */
-        line-height: 1.5rem; /* Adjust line height */
-        margin-bottom: 10px; /* Add margin between buttons */
+        width: 100%; 
+        padding: 0.625rem 1.875rem;
+        font-size: 0.8125rem;
+        line-height: 1.5rem; 
+        margin-bottom: 10px; 
     }
 }
 
@@ -355,8 +386,8 @@ p {
         font-size: 2.8rem;
     }
     .main-btn, .second-btn {
-        padding: 10px 20px; /* Adjust padding for small devices */
-        font-size: 14px; /* Adjust font size for small devices */
+        padding: 10px 20px;
+        font-size: 14px;
     }
 
     h2 {
