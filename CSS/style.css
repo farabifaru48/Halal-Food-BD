@@ -1,16 +1,17 @@
-/* Var */
+/* Variables */
 :root {
     --bg-color: #FFC222;
     --secondary-color: #00a149;
-    --white-color: #fff; 
+    --white-color: #fff;
     --black-color: #1E1D23;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Quicksand', sans-serif;
     --border-radius: 10px;
-    --box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1); 
+    --box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
     --text-color: #b0b0b0;
 }
 
+/* Global Styles */
 *,
 *:after,
 *:before {
@@ -33,7 +34,7 @@ a:hover {
 }
 
 a:hover {
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
 }
 
 html {
@@ -46,7 +47,7 @@ body {
     font-weight: 400;
 }
 
-/* Custom Scroll Bar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 0.625rem;
 }
@@ -59,6 +60,7 @@ body {
     background: var(--secondary-color);
 }
 
+/* Typography */
 h1 {
     font-size: 58px;
     font-weight: 900;
@@ -94,7 +96,7 @@ h5 {
     font-family: var(--secondary-font);
     font-size: 1rem;
     font-weight: 700;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
 p {
@@ -105,6 +107,7 @@ p {
     letter-spacing: 1px;
 }
 
+/* Buttons */
 .main-btn {
     display: inline-block;
     padding: 0.625rem 1.875rem;
@@ -112,13 +115,10 @@ p {
     background-color: var(--bg-color);
     border: 0.1875rem solid var(--bg-color);
     color: var(--black-color);
-    font-size: 0.9375rem; 
+    font-size: 0.9375rem;
     text-transform: capitalize;
     border-radius: 0.5rem;
     box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
-    -webkit-transition: all 0.4s ease-out 0s;
-    -o-transition: all 0.4s ease-out 0s;
-    -moz-transition: all 0.4s ease-out 0s;
     transition: all 0.4s ease-out 0s;
 }
 
@@ -127,6 +127,7 @@ p {
     color: var(--bg-color);
 }
 
+/* Wrapper */
 .wrapper {
     padding: 4.25rem;
     padding-bottom: 4.24rem;
@@ -143,7 +144,6 @@ p {
     width: 100%;
     left: 0;
     z-index: 1000;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
@@ -151,8 +151,9 @@ p {
     padding: 0 0.625rem;
     transition: all 0.3s linear;
 }
+
 .navigation-wrap .nav-item:hover {
-    color: var(--bg-color) !important; 
+    color: var(--bg-color) !important;
 }
 
 .navbar-toggler:focus {
@@ -169,27 +170,26 @@ p {
 }
 
 .nav-link {
-    font-size: 0.9375rem; 
+    font-size: 0.9375rem;
     font-weight: 600;
     text-decoration: capitalize;
     color: var(--white-color);
     letter-spacing: 1px;
 }
+
 .nav-link.active,
 .nav-link:hover,
 .nav-link:focus {
     color: var(--bg-color) !important;
 }
 
-.navigation-wrap .main-btn{
+.navigation-wrap .main-btn {
     padding: 0.3125rem 1.4375rem;
     box-shadow: none;
     margin-left: 0.625rem;
 }
 
-
-
-/* TOP BANNER Design */
+/* Top Banner */
 .top-banner {
     position: relative;
     width: 100%;
@@ -199,61 +199,43 @@ p {
     padding: 16.875rem 0 9.375rem;
 }
 
-
 .top-banner p {
     color: var(--white-color);
-    position: relative; 
+    position: relative;
     z-index: 1;
 }
-/* Slideer */
+
+/* Carousel */
 .carousel-item img {
-    border-radius: 10px; 
-    object-fit: cover; 
-    height: 300px; 
-    margin-top: 20px; 
+    border-radius: 10px;
+    object-fit: cover;
+    height: 300px;
+    margin-top: 20px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
- color: var(--white-color); 
-}
-/* Carousel item image styles */
-.carousel-item img {
-    border-radius: 10px; /* Rounded corners for images */
-    object-fit: cover; /* Ensure images cover entire card */
-    width: 100%; /* Ensure the images take up the full width of the carousel */
-    height: 300px; /* Set a fixed height for consistency */
-    margin-top: 20px; /* Add margin-top for spacing */
+    color: var(--white-color);
 }
 
-/* Carousel control styles */
-.carousel-control-prev,
-.carousel-control-next {
-    color: var(--white-color); /* Set text color for prev and next icons */
-}
-
-/* Ensure captions are displayed */
 .carousel-caption {
-    display: block; /* Ensure the captions are displayed */
-    background: rgba(34, 28, 28, 0.5); /* Semi-transparent background */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px; /* Padding for better readability */
+    display: block;
+    background: rgba(34, 28, 28, 0.5);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 @media (max-width: 576px) {
     .carousel-caption h2 {
-        font-size: 1.5rem; /* Adjust font size for small devices */
+        font-size: 1.5rem;
     }
 
     .carousel-caption p {
-        font-size: 1rem; /* Adjust font size for small devices */
+        font-size: 1rem;
     }
-
 }
 
-
-/* food menu */
-
+/* Food Menu */
 .food-card {
     transition: transform 0.3s ease;
 }
@@ -261,16 +243,15 @@ p {
 .food-card:hover {
     transform: scale(1.05);
     border: var(--secondary);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;        border-radius: 60%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 60%;
     background-color: #FFC222;
-    
 }
 
-
-/* CSS for Blog Section */
+/* Blog Section */
 .card {
-    border: none; 
-    transition: transform 0.3s ease; 
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -278,9 +259,9 @@ p {
 }
 
 .card-title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
 .card-text {
@@ -289,82 +270,66 @@ p {
 
 .card-footer {
     background-color: #00a149;
-    padding: 0.75rem 1.25rem; 
+    padding: 0.75rem 1.25rem;
     border-top: 1px solid var(--secondary-color);
 }
 
 .text-muted {
-    color: var(--text-color); 
+    color: var(--text-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet */
+/* Responsive Styles */
 @media (max-width: 991px) {
     .top-banner {
-        padding: 8rem 0 4rem; 
-        /* Adjust padding for smaller screens */
+        padding: 8rem 0 4rem;
     }
+
     .navigation-wrap.scrolled {
-        background-color: var(--white-color) /* Change background color as needed */
+        background-color: var(--white-color);
         transition: background-color 0.3s ease;
     }
-    
+
     .text-content {
         width: 100%;
     }
 
-    /* Navbar Brand */
     .navigation-wrap .navbar-brand img {
         height: 3.8125rem;
     }
+
     .navigation-wrap {
-        
         text-align: center;
         background-color: var(--white-color);
     }
-    
+
     .navigation-wrap .nav-link {
         line-height: 1.875rem;
         color: var(--black-color);
     }
+
     .navbar-toggler {
         color: var(--black-color);
         outline: none;
         box-shadow: none;
         border: none;
     }
-    .top-banner{
+
+    .top-banner {
         padding: 9.37rem 0 9.375rem;
     }
 }
 
-/* Responsive */
-@media (max-width: 767) {
-h1{
-    font-size: 2.8rem;
-
-}
-h2{
-    font-size: 1.3rem;
-    line-height: 28px;
-}
-.top-banner{
-    padding: 10.37rem 0 9.375rem;
-}
-
-}
-
-/* Responsive */
-@media (max-width: 767) {
-
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.8rem;
     }
+
+    h2 {
+        font-size: 1.3rem;
+        line-height: 28px;
+    }
+
+    .top-banner {
+        padding: 10.37rem 0 9.375rem;
+    }
+}
