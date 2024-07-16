@@ -125,9 +125,9 @@ p {
     display: inline-block;
     padding: 0.625rem 1.875rem;
     line-height: 1.5625rem;
-    background-color: transparent;
-    color: var(--bg-color);   
-     border: 0.1875rem solid var(--bg-color);
+    background-color: var(--secondary-color);
+    color: var(--black-color);   
+     border: 0.1875rem solid var(--secondary-color);
     font-size: 0.9375rem;
     text-transform: capitalize;
     border-radius: 0.5rem;
@@ -140,8 +140,8 @@ p {
     color: var(--bg-color);
 }
 .second-btn:hover {
-    background-color: var(--bg-color);
-    color: var(--black-color);
+    background-color: transparent;
+    color: var(--white-color);
 }
 
 /* Wrapper */
@@ -186,15 +186,12 @@ p {
     border: none;
 }
 
-
-
 .nav-link {
     font-size: 0.9375rem;
     font-weight: 600;
     text-decoration: capitalize;
     color: var(--white-color);
     letter-spacing: 1px;
-    
 }
 
 .nav-link.active,
@@ -208,7 +205,6 @@ p {
     box-shadow: none;
     margin-left: 0.625rem;
 }
-
 /* Top Banner */
 .top-banner {
     position: relative;
@@ -253,6 +249,7 @@ p {
     .carousel-caption p {
         font-size: 1rem;
     }
+  
 }
 
 /* Food Menu */
@@ -299,7 +296,7 @@ p {
 }
 
 /* Responsive Styles */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .top-banner {
         padding: 8rem 0 4rem;
     }
@@ -336,6 +333,11 @@ p {
 
     .top-banner {
         padding: 9.37rem 0 9.375rem;
+    }
+    .main-btn, .second-btn {
+        width: 100%; /* Make buttons full-width on small devices */
+        margin-bottom: 10px;
+         /* Add margin between buttons on small devices */
     }
 }
 
