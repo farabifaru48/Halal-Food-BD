@@ -335,15 +335,28 @@ p {
         padding: 9.37rem 0 9.375rem;
     }
     .main-btn, .second-btn {
+        width: 100%; /* Make buttons full-width on medium devices */
+        margin-bottom: 10px; /* Add margin between buttons on medium devices */
+    }
+}
+@media (max-width: 320px) {
+    .main-btn,
+    .second-btn {
         width: 100%; /* Make buttons full-width on small devices */
-        margin-bottom: 10px;
-         /* Add margin between buttons on small devices */
+        padding: 0.625rem 1.875rem; /* Adjust padding */
+        font-size: 0.8125rem; /* Adjust font size */
+        line-height: 1.5rem; /* Adjust line height */
+        margin-bottom: 10px; /* Add margin between buttons */
     }
 }
 
 @media (max-width: 767px) {
     h1 {
         font-size: 2.8rem;
+    }
+    .main-btn, .second-btn {
+        padding: 10px 20px; /* Adjust padding for small devices */
+        font-size: 14px; /* Adjust font size for small devices */
     }
 
     h2 {
