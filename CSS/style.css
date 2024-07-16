@@ -273,7 +273,7 @@ p {
     transform: scale(1.05);
     border: var(--secondary);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    border-radius: 60%;
+    border-radius: 50px 50px;
     background-color: #FFC222;
 }
 
@@ -312,7 +312,17 @@ p {
  .social-icons li {
     margin-right: 15px; /* Adjust as needed */
 }
+footer .text-center {
+    text-align: center !important;
+}
 
+footer .text-lg-start {
+    text-align: left !important;
+}
+
+footer .text-lg-start ul {
+    text-align: left;
+}
 /* Style for social icons */
 .social-icons a {
     color: #ccc;
@@ -324,6 +334,29 @@ p {
     color: #fff;
     text-decoration: none;
 }
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+
+/* +++++++++======================= */
+/* +++++++++======================= */
+/* +++++++++======================= */
 
 
 /* Responsive Styles */
@@ -397,5 +430,32 @@ p {
 
     .top-banner {
         padding: 10.37rem 0 9.375rem;
+    }
+    footer .container {
+        padding: 5px;
+    }
+
+    footer .row > div {
+        margin-bottom: 20px;
+    }
+
+    footer .text-center {
+        text-align: center !important;
+    }
+
+    footer .text-lg-start {
+        text-align: center !important;
+    }
+
+    footer .social-icons {
+        justify-content: center !important;
+    }
+
+    footer .app-download-link {
+        margin-bottom: 10px;
+    }
+
+    footer .app-download-link img {
+        max-width: 80px;
     }
 }
